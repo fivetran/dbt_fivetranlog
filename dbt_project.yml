@@ -1,11 +1,11 @@
-name: 'connector_name'
+name: 'fivetranlog3'
 version: '0.1.0'
 config-version: 2
 require-dbt-version: [">=0.18.0", "<0.20.0"]
-
+profile: dbt_demo
 models:
   connector:
-    +schema: stg_connector_name #connector for transform package
+    +schema: fivetranlog3 #connector for transform package
     +materialized: table # for building the package, switch to views later? 
 
 vars:
